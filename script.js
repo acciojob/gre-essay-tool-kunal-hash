@@ -1,5 +1,5 @@
 function count(){
-	var total=document.getElementById("evaluatedText").value;
-  total=total.replace(/\s/g, '');
-  document.getElementById("wordCount").innerHTML= +total.length;
+	 var text = document.getElementById("evaluatedText").value;
+        var wordCount = text.trim() ? text.trim().split(" ").length : 0;
+        document.getElementById("wordCount").innerHTML = wordCount;
 }
